@@ -38,7 +38,7 @@ def putWatermark(image,name):
 
     # Paste the watermark (with alpha layer) onto the original image and save it
     main.paste(watermark, None, watermark)
-    main.save(str(image.split('.')[0])+"-watermarked.jpg", "JPEG")
+    main.save(str(image.split('.')[0])+"-watermarked.png", "png")
  
 if __name__ == '__main__':
     putWatermark()
